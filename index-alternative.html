@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Canvas Example</title>
+</head>
+<body>
+    <h1>Bar Chart Example</h1>
+    <div role="img" aria-label="Bar chart showing sales data for Q1 2024">
+        <canvas id="salesChart" width="600" height="400" aria-hidden="true"></canvas>
+        <div id="salesData">
+            <p>Sales Data for Q1 2024:</p>
+            <ul>
+                <li tabindex="1" aria-label="Sales in January: $10,000">January: $10,000</li>
+                <li tabindex="2" aria-label="Sales in February: $12,000">February: $12,000</li>
+                <li tabindex="3" aria-label="Sales in March: $15,000">March: $15,000</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script-alternative.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Canvas Example</title>
+    <style>
+        .canvas-container {
+            position: relative;
+        }
+        canvas {
+            outline: none; /* Remove default focus outline */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bar Chart Example</h1>
+    <div class="canvas-container" role="presentation">
+        <canvas id="salesChart" width="600" height="400" tabindex="0" aria-label="Sales Data for Q1 2024. Use arrow keys to navigate the bars and press Enter to get details." role="img"></canvas>
+    </div>
+    <script src="script-nohtml.js"></script>
+</body>
+</html>

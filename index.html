@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Canvas Example</title>
+    <style>
+        #salesData {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+        .bar-button, .title-button {
+            position: absolute;
+            border: none;
+            background: none;
+            opacity: 0;
+        }
+        .canvas-container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bar Chart Example</h1>
+    <div class="canvas-container" role="presentation">
+      <canvas id="salesChart" width="600" height="400" aria-hidden="true"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
