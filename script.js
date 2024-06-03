@@ -79,7 +79,6 @@ bars.forEach((bar) => {
     button.style.height = `${bar.height}px`;
     button.classList.add('bar-button');
     button.setAttribute('aria-label', `Sales in ${bar.data.month}: $${bar.data.value}`);
-    button.setAttribute('role', 'button');
     button.addEventListener('focus', () => {
         ctx.strokeStyle = '#ff0000';
         ctx.lineWidth = 4;
